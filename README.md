@@ -1,4 +1,4 @@
-# BizMatch -
+# BizMatch
 
 **BizMatch** is a digital platform connecting business buyers and sellers. Unlike traditional models, **sellers initiate contact with buyers**, and the platform guides both parties through a streamlined acquisition workflow.
 
@@ -130,4 +130,3 @@ client/
 
 This project is licensed under the MIT License.
 
-```
