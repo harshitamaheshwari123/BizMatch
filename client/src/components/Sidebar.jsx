@@ -50,29 +50,31 @@ export default function Sidebar({ isOpen = true }) {
   }, []);
 
   const navItems = [
-    { path: "/", label: "Dashboard", icon: "📊" },
-    { path: "/onboarding-buyer", label: "Onboarding", icon: "📝" },
-    { path: "/onboarding-seller", label: "Seller Onboarding", icon: "👤" },
-    { path: "/acquisition", label: "Acquisition", icon: "📈" },
+    { path: "/", label: "Dashboard", icon: "&#128202;" }, 
+    { path: "/onboarding-buyer", label: "Onboarding", icon: "&#128221;" }, 
+    {
+      path: "/onboarding-seller",
+      label: "Seller Onboarding",
+      icon: "&#128100;",
+    }, // 👤
+    { path: "/acquisition", label: "Acquisition", icon: "&#128200;" },
     {
       path: "/acquisition-workflow",
       label: "Acquisition Workflow",
-      icon: "🔄",
-    },
-    { path: "/profile", label: "Profile", icon: "⚙️" },
+      icon: "&#128260;",
+    }, // 🔄
+    { path: "/profile", label: "Profile", icon: "&#9881;" }, 
   ];
 
   const bottomItems = [
-    { path: "/settings", label: "Settings", icon: "🔧" },
-    { path: "/legal", label: "Legal", icon: "📄" },
-    { path: "/support", label: "Support", icon: "❓" },
+    { path: "/settings", label: "Settings", icon: "&#128295;" }, 
+    { path: "/legal", label: "Legal", icon: "&#128196;" },
+    { path: "/support", label: "Support", icon: "&#10067;" },
   ];
 
   return (
     <>
       <div ref={sidebarRef} className={`sidebar ${isOpen ? "open" : "closed"}`}>
-        
-
         <nav className="sidebar-nav">
           {navItems.map((item) => (
             <Link
@@ -82,7 +84,10 @@ export default function Sidebar({ isOpen = true }) {
                 location.pathname === item.path ? "active" : ""
               }`}
             >
-              <span className="sidebar-icon">{item.icon}</span>
+              <span
+                className="sidebar-icon"
+                dangerouslySetInnerHTML={{ __html: item.icon }}
+              />
               <span className="sidebar-label">{item.label}</span>
             </Link>
           ))}
@@ -93,7 +98,10 @@ export default function Sidebar({ isOpen = true }) {
         <nav className="sidebar-nav">
           {bottomItems.map((item) => (
             <Link key={item.path} to={item.path} className="sidebar-link">
-              <span className="sidebar-icon">{item.icon}</span>
+              <span
+                className="sidebar-icon"
+                dangerouslySetInnerHTML={{ __html: item.icon }}
+              />
               <span className="sidebar-label">{item.label}</span>
             </Link>
           ))}

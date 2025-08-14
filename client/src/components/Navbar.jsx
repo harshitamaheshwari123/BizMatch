@@ -12,7 +12,8 @@ export default function Navbar({ onToggleSidebar }) {
         className="pill navbar-toggle"
         onClick={onToggleSidebar}
       >
-        ☰
+       <span>&#9776;</span>
+ 
       </button>
       <div className="navbar-container">
         <div className="navbar-brand">

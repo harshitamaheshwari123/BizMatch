@@ -73,7 +73,7 @@ h1 {
   padding: 0.8rem 1rem;
   border-radius: 6px;
   border: none;
-  background-color: rgb(166, 51, 192); /* Changed to orange */
+  background-color: rgb(166, 51, 192);
   color: white;
   font-weight: bold;
   cursor: pointer;

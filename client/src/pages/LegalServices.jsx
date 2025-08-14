@@ -30,7 +30,6 @@ export default function LegalServices() {
 
   return (
     <div className="legal-container">
-     
       <div className="content">
         <h1 className="page-title">Legal Services</h1>
         <p className="page-subtitle">
@@ -69,27 +68,31 @@ export default function LegalServices() {
           </div>
         </div>
 
-       
         <div className="footer-cards">
           <div className="footer-card">
-            <div className="footer-icon">💼</div>
+            <div className="footer-icon">
+              <span>&#x1F4BC;</span>
+            </div>
             <h3>Find an Attorney</h3>
             <p>We can help you find experienced M&A attorneys in your area.</p>
           </div>
           <div className="footer-card">
-            <div className="footer-icon">📄</div>
+            <div className="footer-icon">
+              <span>&#128196;</span>
+            </div>
             <h3>Document Review</h3>
             <p>Have your legal documents reviewed by experts before signing.</p>
           </div>
           <div className="footer-card">
-            <div className="footer-icon">🛡️</div>
+            <div className="footer-icon">
+              <span>&#128737;</span>
+            </div>
             <h3>Ensure Compliance</h3>
             <p>Navigate regulatory and compliance issues with confidence.</p>
           </div>
         </div>
       </div>
 
-    
       <div className="footer-links">
         © 2025 BizMatch, Inc. All rights reserved. &nbsp;
         <a href="#">Terms of Service</a> &nbsp; | &nbsp;

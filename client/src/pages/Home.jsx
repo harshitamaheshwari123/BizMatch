@@ -8,7 +8,7 @@ export default function Home() {
   const [expandedFAQ, setExpandedFAQ] = useState(null);
 
   useEffect(() => {
-    // Instead of backend, use sample data
+    // Sample data
     const dummyBuyers = [
       { id: 1, name: "John Doe", email: "john@example.com" },
       { id: 2, name: "Priya Sharma", email: "priya@example.com" },
@@ -67,7 +67,7 @@ export default function Home() {
           </p>
         </div>
         <button className="analyze-btn">
-          <span>📄</span>
+          <span>&#128196;</span> 
           Analyze Document
         </button>
       </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="metric-card">
           <div className="metric-header">
             <h3>Total Revenue</h3>
-            <span className="metric-icon">💰</span>
+            <span className="metric-icon">&#128176;</span> 
           </div>
           <div className="metric-value">$45,231.89</div>
           <div className="metric-change positive">+20.1% from last month</div>
@@ -86,7 +86,7 @@ export default function Home() {
         <div className="metric-card">
           <div className="metric-header">
             <h3>Potential Buyers</h3>
-            <span className="metric-icon">👥</span>
+            <span className="metric-icon">&#128101;</span> 
           </div>
           <div className="metric-value">+23</div>
           <div className="metric-change positive">+5 from last week</div>
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="metric-card">
           <div className="metric-header">
             <h3>Active Deals</h3>
-            <span className="metric-icon">📈</span>
+            <span className="metric-icon">&#128200;</span>
           </div>
           <div className="metric-value">+12</div>
           <div className="metric-change positive">+2 since yesterday</div>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="metric-card">
           <div className="metric-header">
             <h3>Response Rate</h3>
-            <span className="metric-icon">📊</span>
+            <span className="metric-icon">&#128202;</span>
           </div>
           <div className="metric-value">78%</div>
           <div className="metric-change negative">-2% from last month</div>
@@ -154,7 +154,7 @@ export default function Home() {
         <h2 className="section-title">Why BizMatch?</h2>
         <div className="features-section">
           <div className="feature-card float1">
-            <div className="icon">💼</div>
+            <div className="icon">&#128188;</div>
             <h3>Simplified Deal Flow</h3>
             <p>
               Manage your acquisition pipeline with intuitive tools and a clear
@@ -162,7 +162,7 @@ export default function Home() {
             </p>
           </div>
           <div className="feature-card float2">
-            <div className="icon">⚡</div>
+            <div className="icon">&#9889;</div> 
             <h3>AI-Powered Matching</h3>
             <p>
               Our intelligent algorithms connect you with the most compatible
@@ -170,7 +170,7 @@ export default function Home() {
             </p>
           </div>
           <div className="feature-card float3">
-            <div className="icon">🔒</div>
+            <div className="icon">&#128274;</div> 
             <h3>Secure Data Rooms</h3>
             <p>
               Share sensitive documents with confidence in our secure and
@@ -185,7 +185,7 @@ export default function Home() {
         <h2 className="section-title">How It Works</h2>
         <div className="how-grid">
           <div className="how-card">
-            <div className="how-icon">👤</div>
+            <div className="how-icon">&#128100;</div>
             <h3>Create Your Profile</h3>
             <p>
               Whether you're selling your business or looking to acquire, a
@@ -193,7 +193,7 @@ export default function Home() {
             </p>
           </div>
           <div className="how-card">
-            <div className="how-icon">🔎</div>
+            <div className="how-icon">&#128269;</div>
             <h3>Discover Opportunities</h3>
             <p>
               Browse curated listings or get matched by our AI with buyers and
@@ -201,7 +201,7 @@ export default function Home() {
             </p>
           </div>
           <div className="how-card">
-            <div className="how-icon">🛡️</div>
+            <div className="how-icon">&#128737;</div> 
             <h3>Close with Confidence</h3>
             <p>
               Utilize our secure platform for communication, due diligence, and
@@ -249,10 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-      
-
       <div className="faq-header">
         <h1>Frequently Asked Questions</h1>
         <p>Find answers to common questions about BizMatch</p>
@@ -269,7 +265,10 @@ export default function Home() {
             >
               <div className="faq-question">
                 <h3>{faq.question}</h3>
-                <span className="faq-icon">{isOpen ? "▲" : "▼"}</span>
+                <span className="faq-icon">
+                  {isOpen ? "&#9650;" : "&#9660;"}
+                </span>{" "}
+               
               </div>
               {isOpen && (
                 <div className="faq-answer">
@@ -346,7 +345,7 @@ function TaskList() {
             />
             <span className="task-text">{t.text}</span>
             <button className="task-menu" aria-label="more">
-              ⋯
+              &#8942; 
             </button>
           </li>
         ))}
