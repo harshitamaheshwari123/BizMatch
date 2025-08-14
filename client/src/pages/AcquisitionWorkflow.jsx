@@ -15,7 +15,7 @@ export default function AcquisitionWorkflow() {
     <div className="workflow-container">
       <h2 className="workflow-title">Acquisition Process Workflow</h2>
 
-      {/* Chat/Deal Room */}
+     
       <div className="chat-section">
         <h3>Post-Match Chat Room</h3>
         <div className="chat-box">
@@ -34,7 +34,7 @@ export default function AcquisitionWorkflow() {
         <button className="send-btn">Send</button>
       </div>
 
-      {/* Steps */}
+      
       <div className="steps-section">
         <h3>Deal Progress Steps</h3>
         <ul className="steps-list">
@@ -52,7 +52,7 @@ export default function AcquisitionWorkflow() {
         </ul>
       </div>
 
-      {/* Document Upload */}
+      
       <div className="upload-section">
         <h3>Upload Deal Documents</h3>
         <input type="file" className="file-input" />

@@ -7,7 +7,6 @@
   --pill-border: rgba(155, 89, 255, 0.2);
   --navbar-height: 80px;
   --sidebar-width: 280px;
-  /* Global light theme tokens used by all pages */
   --primary-bg: #ffffff;
   --secondary-bg: #f8f9fa;
   --tertiary-bg: #e9ecef;
@@ -126,7 +125,6 @@ a {
   box-shadow: 0 10px 30px rgba(155, 89, 255, 0.18);
 }
 
-/* small utilities */
 .row {
   display: flex;
   gap: 1rem;
@@ -144,7 +142,6 @@ a {
   border: 1px solid rgba(155, 89, 255, 0.03);
 }
 
-/* responsive */
 @media (max-width: 720px) {
   .nav-links {
     gap: 0.4rem;

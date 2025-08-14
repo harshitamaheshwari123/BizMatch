@@ -139,7 +139,7 @@
   box-shadow: var(--shadow-lg);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .faq-header h1 {
     font-size: 2rem;

@@ -19,7 +19,6 @@ import AcquisitionWorkflow from "./pages/AcquisitionWorkflow";
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Initialize as closed and close on outside click
   useEffect(() => {
     const root = document.documentElement;
     root.dataset.sidebar = isSidebarOpen ? "open" : "closed";

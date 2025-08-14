@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import "./LegalServices.css"; // Import CSS file
+import "./LegalServices.css"; 
 
 export default function LegalServices() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -30,7 +30,7 @@ export default function LegalServices() {
 
   return (
     <div className="legal-container">
-      {/* Main Content */}
+     
       <div className="content">
         <h1 className="page-title">Legal Services</h1>
         <p className="page-subtitle">
@@ -69,7 +69,7 @@ export default function LegalServices() {
           </div>
         </div>
 
-        {/* Footer Cards */}
+       
         <div className="footer-cards">
           <div className="footer-card">
             <div className="footer-icon">💼</div>
@@ -89,7 +89,7 @@ export default function LegalServices() {
         </div>
       </div>
 
-      {/* Footer Links */}
+    
       <div className="footer-links">
         © 2025 BizMatch, Inc. All rights reserved. &nbsp;
         <a href="#">Terms of Service</a> &nbsp; | &nbsp;

@@ -135,7 +135,6 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .buyer-header {
     flex-direction: column;

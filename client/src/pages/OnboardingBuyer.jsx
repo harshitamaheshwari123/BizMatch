@@ -32,7 +32,7 @@ const timelineOptions = [
 export default function OnboardingBuyer() {
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({
-    // Step 1
+    
     name: "",
     budget: "",
     budgetOther: "",
@@ -41,11 +41,10 @@ export default function OnboardingBuyer() {
     timeline: "",
     timelineOther: "",
     notes: "",
-    // Step 2
+   
     investment_focus: "",
     min_investment: "0",
     max_investment: "0",
-    // Step 3
     agree: true,
   });
   const [submitting, setSubmitting] = useState(false);
@@ -88,12 +87,12 @@ export default function OnboardingBuyer() {
     delete newBuyer.industryOther;
     delete newBuyer.timelineOther;
 
-    // Save to localStorage
+   
     const buyers = JSON.parse(localStorage.getItem("buyers") || "[]");
     buyers.unshift(newBuyer);
     localStorage.setItem("buyers", JSON.stringify(buyers));
 
-    // Save view profile data
+   
     localStorage.setItem(
       "viewProfile",
       JSON.stringify({ role: "buyer", ...newBuyer })

@@ -32,12 +32,11 @@ export default function Acquisition() {
       "Closing procedures scheduled",
     ];
 
-    // Join checklist items
+    
     const checklistContent = checklistItems
       .map((item, i) => `${i + 1}. ${item}`)
       .join("\n");
 
-    // Include the AI-generated summary below the checklist
     const content = `${checklistContent}\n\nAI Summary:\n${
       summary || "No summary available"
     }`;

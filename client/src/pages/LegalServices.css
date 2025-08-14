@@ -1,4 +1,4 @@
-/* Container styling */
+
 .legal-container {
   background-color: #f8fafc;
   min-height: 100vh;
@@ -23,7 +23,7 @@
   margin-top: 0.25rem;
 }
 
-/* Card */
+
 .card {
   background: white;
   padding: 1.5rem;
@@ -43,7 +43,7 @@
   color: #4b5563;
 }
 
-/* Accordion */
+
 .accordion {
   margin-top: 1.5rem;
 }
@@ -71,7 +71,7 @@
   font-size: 0.95rem;
 }
 
-/* Footer Cards */
+
 .footer-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,7 +103,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* Footer Links */
 .footer-links {
   text-align: center;
   font-size: 0.85rem;

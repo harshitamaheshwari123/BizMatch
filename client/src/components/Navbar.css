@@ -1,8 +1,8 @@
-/* Navbar container styling */
+
 .navbar {
   background-color: var(--primary-bg);
   color: var(--text-main);
-  padding: 1rem 2rem 1rem 44px; /* reserve space for left toggle */
+  padding: 1rem 2rem 1rem 44px; 
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,6 @@
   height: var(--navbar-height);
 }
 
-/* Flex container */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -22,14 +21,14 @@
   margin: 0;
   padding-left: var(
     --sidebar-width
-  ); /* align content with main area (sidebar width) */
+  ); 
 }
 
 :root[data-sidebar="closed"] .navbar-container {
   padding-left: 0;
 }
 
-/* Corner toggle button */
+
 .navbar-toggle {
   position: fixed;
   top: 14px;
@@ -39,7 +38,7 @@
   line-height: 1;
 }
 
-/* Branding */
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -92,7 +91,6 @@
   color: var(--muted);
 }
 
-/* Right side icons */
 .nav-right {
   display: flex;
   align-items: center;
@@ -139,7 +137,6 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Animations */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -151,7 +148,6 @@
   }
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
@@ -184,7 +180,6 @@
     padding-left: var(--sidebar-width);
   }
 }
-/* User avatar */
 .user-avatar-wrapper {
   position: relative;
   cursor: pointer;
@@ -207,7 +202,7 @@
 }
 
 .user-avatar {
-  background-color: purple; /* Purple background */
+  background-color: purple; 
   color: white;
   border-radius: 50%;
   width: 36px;

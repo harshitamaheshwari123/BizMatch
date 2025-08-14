@@ -34,14 +34,14 @@ export default function Support() {
 
   return (
     <div className="support-page">
-      {/* Header */}
+      
       <h1>Support</h1>
       <p className="subtitle">
         We're here to help. Find answers to common questions or get in touch
         with our team.
       </p>
 
-      {/* FAQ Section */}
+      
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
         {faqs.map((faq, index) => (
@@ -64,7 +64,7 @@ export default function Support() {
         ))}
       </div>
 
-      {/* Contact Form */}
+     
       <div className="contact-section">
         <h2>Contact Us</h2>
         <form>

@@ -9,7 +9,7 @@
   padding: 1rem;
   z-index: 900;
   overflow-y: auto;
-  margin-top: var(--navbar-height); /* Account for fixed navbar */
+  margin-top: var(--navbar-height); 
   transition: transform 0.25s ease, width 0.1s ease;
 }
 
@@ -101,8 +101,6 @@
   background: var(--border);
   margin: 1rem 0;
 }
-
-/* Responsive */
 @media (max-width: 1024px) {
   .sidebar {
     width: var(--sidebar-width);
@@ -119,13 +117,10 @@
     transform: translateX(0);
   }
 }
-
-/* Support collapsing on desktop as well */
 .sidebar.closed {
   transform: translateX(-100%);
 }
 
-/* Resize handle */
 .sidebar-resizer {
   position: fixed;
   top: var(--navbar-height);

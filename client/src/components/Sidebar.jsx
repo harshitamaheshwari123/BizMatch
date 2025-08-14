@@ -71,7 +71,7 @@ export default function Sidebar({ isOpen = true }) {
   return (
     <>
       <div ref={sidebarRef} className={`sidebar ${isOpen ? "open" : "closed"}`}>
-        {/* header removed per request */}
+        
 
         <nav className="sidebar-nav">
           {navItems.map((item) => (
@@ -99,7 +99,6 @@ export default function Sidebar({ isOpen = true }) {
           ))}
         </nav>
       </div>
-      {/* Drag handle */}
       <div ref={resizerRef} className="sidebar-resizer" />
     </>
   );

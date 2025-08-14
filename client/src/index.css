@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Main content wrapper to account for sidebar */
+
 .main-content {
   margin-left: var(--sidebar-width);
   margin-top: var(--navbar-height);
@@ -11,12 +11,11 @@
   overflow-x: hidden;
 }
 
-/* Collapse layout when sidebar is closed */
+
 :root[data-sidebar="closed"] .main-content {
   margin-left: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .main-content {
     margin-left: var(--sidebar-width);

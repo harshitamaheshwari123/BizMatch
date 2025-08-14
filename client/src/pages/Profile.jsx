@@ -5,7 +5,7 @@ export default function Profile() {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    // Hardcoded sample buyers and sellers
+   
     const buyers = [
       {
         id: "b1",

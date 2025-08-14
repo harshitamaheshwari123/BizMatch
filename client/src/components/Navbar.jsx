@@ -7,7 +7,6 @@ export default function Navbar({ onToggleSidebar }) {
 
   return (
     <nav className="navbar">
-      {/* Left-corner toggle */}
       <button
         aria-label="Toggle sidebar"
         className="pill navbar-toggle"
@@ -40,7 +39,6 @@ export default function Navbar({ onToggleSidebar }) {
             </svg>
           </div>
 
-          {/* Avatar with dropdown */}
           <div
             className="user-avatar-container"
             onMouseEnter={() => setShowMenu(true)}

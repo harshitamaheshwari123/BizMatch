@@ -61,7 +61,6 @@ export default function OnboardingSeller() {
     }
     setSubmitting(true);
 
-    // Create local profile
     const submission = {
       ...form,
       industry: getActualValue("industry", "industryOther"),
@@ -74,18 +73,18 @@ export default function OnboardingSeller() {
     delete submission.timelineOther;
     delete submission.askingPriceOther;
 
-    // Save to localStorage
+    
     const local = JSON.parse(localStorage.getItem("sellers") || "[]");
     local.unshift(submission);
     localStorage.setItem("sellers", JSON.stringify(local));
 
-    // Save as current viewed profile
+   
     localStorage.setItem(
       "viewProfile",
       JSON.stringify({ role: "seller", ...submission })
     );
 
-    // Navigate to profile list
+
     nav("/profile");
     setSubmitting(false);
   };

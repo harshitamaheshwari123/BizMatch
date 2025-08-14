@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 export default function ProfileDashboard() {
   const { role, id } = useParams();
 
-  // Dummy database
+
   const profiles = {
     buyer: [
       {
