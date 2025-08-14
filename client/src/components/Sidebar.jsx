@@ -56,13 +56,13 @@ export default function Sidebar({ isOpen = true }) {
       path: "/onboarding-seller",
       label: "Seller Onboarding",
       icon: "&#128100;",
-    }, // 👤
+    }, 
     { path: "/acquisition", label: "Acquisition", icon: "&#128200;" },
     {
       path: "/acquisition-workflow",
       label: "Acquisition Workflow",
       icon: "&#128260;",
-    }, // 🔄
+    }, 
     { path: "/profile", label: "Profile", icon: "&#9881;" }, 
   ];
 
